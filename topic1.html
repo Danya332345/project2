@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Раздел 1: Функциональные стили</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #eef2f7, #dce5ed);
+            padding: 2rem;
+        }
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 48px;
+            padding: 2rem;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.2);
+            animation: fadeSlide 0.6s ease-out;
+        }
+        .back-link {
+            display: inline-flex;
+            background: #eef2f5;
+            padding: 0.5rem 1.2rem;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #1e5a6e;
+            margin-bottom: 2rem;
+            transition: 0.2s;
+        }
+        .back-link:hover { background: #e2eaf0; transform: translateX(-4px); }
+        .section-block {
+            margin-bottom: 2rem;
+            border-left: 5px solid #2c7da0;
+            padding-left: 1.5rem;
+        }
+        .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: #0f4c5f; }
+        h3 { font-size: 1.4rem; color: #2c7da0; margin: 1rem 0 0.5rem; }
+        .list-styled { padding-left: 1.5rem; margin: 0.8rem 0; }
+        .list-styled li { margin: 0.4rem 0; }
+        .grid-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .style-card {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 1rem;
+            flex: 1 1 200px;
+            border: 1px solid #d4e4ed;
+            transition: 0.2s;
+        }
+        .style-card:hover { transform: translateY(-3px); background: #fff; }
+        footer { margin-top: 2rem; text-align: center; border-top: 1px solid #d4e2ea; padding-top: 1.5rem; color: #5f7f9a; }
+        @media (max-width: 700px) { body { padding: 1rem; } .section-title { font-size: 1.5rem; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">← На главную</a>
+    <h1 style="margin-bottom: 1rem;">📚 Функциональные стили русского литературного языка</h1>
+    <p style="margin-bottom: 1.8rem; font-size: 1.05rem;">Функциональные стили — это разновидности языка, обслуживающие разные сферы общения. Каждый стиль представляет собой типовую коммуникативную ситуацию с особым набором языковых средств.</p>
+
+    <div class="section-block">
+        <div class="section-title">1. Научный стиль</div>
+        <p><strong>Сфера:</strong> наука, техника, образование. <strong>Цель:</strong> точная передача информации, доказательство истины.</p>
+        <ul class="list-styled">
+            <li>Лексика: термины, абстрактные существительные.</li>
+            <li>Морфология: преобладание существительных, страдательные причастия.</li>
+            <li>Синтаксис: сложные предложения, вводные слова, пассивные конструкции.</li>
+        </ul>
+        <div class="style-card"><strong>Пример:</strong> «Алгоритм быстрой сортировки (quicksort) относится к классу рекурсивных алгоритмов „разделяй и властвуй“ и имеет среднюю временную сложность O(n log n).»</div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">2. Официально-деловой стиль</div>
+        <p><strong>Сфера:</strong> право, делопроизводство, административная деятельность. <strong>Цель:</strong> констатация фактов, предписание, регулирование.</p>
+        <ul class="list-styled">
+            <li>Лексика: канцеляризмы, стандартные клише, профессиональная лексика.</li>
+            <li>Морфология: отглагольные существительные, краткие прилагательные.</li>
+            <li>Синтаксис: сложные предложения с перечислением, прямой порядок слов.</li>
+        </ul>
+        <div class="style-card"><strong>Пример:</strong> «В соответствии с договором № 45 от 12.03.2025 исполнитель обязуется предоставить заказчику результаты работ в срок до 20.04.2025.»</div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">3. Публицистический стиль</div>
+        <p><strong>Сфера:</strong> СМИ, публичные выступления, интернет-блоги. <strong>Цель:</strong> воздействие на аудиторию, формирование мнения.</p>
+        <ul class="list-styled">
+            <li>Лексика: общественно-политическая, оценочные слова, фразеологизмы.</li>
+            <li>Морфология: активное использование местоимений, глаголов в настоящем времени.</li>
+            <li>Синтаксис: риторические вопросы, восклицания, параллельные конструкции.</li>
+        </ul>
+        <div class="style-card"><strong>Пример:</strong> «Цифровая трансформация уже не будущее, а настоящее! Компании, игнорирующие AI, рискуют остаться за бортом рынка.»</div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">4. Разговорный стиль</div>
+        <p><strong>Сфера:</strong> бытовое общение, неформальные беседы, чаты. <strong>Цель:</strong> непринуждённый обмен информацией.</p>
+        <ul class="list-styled">
+            <li>Лексика: бытовая, эмоционально окрашенная, просторечия.</li>
+            <li>Морфология: пропуски слов, усечения, уменьшительно-ласкательные формы.</li>
+            <li>Синтаксис: короткие предложения, инверсия, эллипсис.</li>
+        </ul>
+        <div class="style-card"><strong>Пример:</strong> «Привет! Ты глянул тот пул-реквест? Давай сегодня замержим, а то завтра дедлайн.»</div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">5. Художественный стиль</div>
+        <p><strong>Сфера:</strong> литература, искусство. <strong>Цель:</strong> создание образов, эстетическое воздействие.</p>
+        <ul class="list-styled">
+            <li>Лексика: вся лексика языка + индивидуально-авторские слова.</li>
+            <li>Морфология: любые формы для выразительности.</li>
+            <li>Синтаксис: разнообразие конструкций, фигуры речи.</li>
+        </ul>
+        <div class="style-card"><strong>Пример (техническая метафора):</strong> «Его мысли перезагружались, как сервер после DDoS-атаки, но спустя минуту стек очищался, и он снова писал чистый код своей жизни.»</div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Вывод: стиль как коммуникативная стратегия</div>
+        <p>Каждая коммуникативная ситуация требует выбора определённого стиля. Ошибка в выборе стиля ведёт к коммуникативной неудаче. Например, использование разговорной лексики в официальном письме или канцеляризмов в дружеской беседе недопустимо.</p>
+    </div>
+    <footer>Раздел 1: Функциональные стили — основа культуры речи</footer>
+</div>
+</body>
+</html>

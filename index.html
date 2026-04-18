@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема 2: Коммуникативный аспект культуры речи</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #eef2f7 0%, #dce5ed 100%);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.96);
+            border-radius: 48px;
+            box-shadow: 0 25px 45px -12px rgba(0,0,0,0.2);
+            padding: 2rem 2rem 2.5rem;
+            animation: fadeInUp 0.7s ease-out;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            border-bottom: 3px solid #2c7da0;
+            padding-bottom: 1.2rem;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(120deg, #0b3b4f, #2c7da0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .header p {
+            font-size: 1.1rem;
+            color: #3a6b84;
+            margin-top: 8px;
+        }
+        .themes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .theme-card {
+            background: #fff;
+            border-radius: 32px;
+            padding: 1.8rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: all 0.35s cubic-bezier(0.2,0.9,0.4,1.1);
+            border: 1px solid rgba(44,125,160,0.2);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        .theme-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #2c7da0, #61a5c2);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        .theme-card:hover::before { transform: scaleX(1); }
+        .theme-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 35px -12px rgba(44,125,160,0.3);
+            border-color: #2c7da0;
+        }
+        .theme-number {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            color: #2c7da0;
+            margin-bottom: 0.7rem;
+        }
+        .theme-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: #0f4c5f;
+        }
+        .theme-desc {
+            color: #4a627a;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #5f7f9a;
+            border-top: 1px solid #d4e2ea;
+            padding-top: 1.5rem;
+        }
+        @media (max-width: 700px) {
+            body { padding: 1rem; }
+            .container { padding: 1.2rem; }
+            .theme-title { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🗣️ Коммуникативный аспект культуры речи</h1>
+        <p>Функциональные стили, лексика, точность словоупотребления и границы языка</p>
+    </div>
+    <div class="themes-grid">
+        <a href="topic1.html" class="theme-card">
+            <div class="theme-number">Раздел 1</div>
+            <div class="theme-title">Функциональные стили</div>
+            <div class="theme-desc">Типовые коммуникативные ситуации: научный, официально-деловой, публицистический, разговорный, художественный стили.</div>
+        </a>
+        <a href="topic2.html" class="theme-card">
+            <div class="theme-number">Раздел 2</div>
+            <div class="theme-title">Лексика функциональных стилей</div>
+            <div class="theme-desc">Особенности лексики каждого стиля, стилистическая окраска, термины, канцеляризмы, разговорная лексика.</div>
+        </a>
+        <a href="topic3.html" class="theme-card">
+            <div class="theme-number">Раздел 3</div>
+            <div class="theme-title">Синонимы, омонимы, паронимы</div>
+            <div class="theme-desc">Проблемы выбора, точность речи, типичные ошибки и способы их избежать.</div>
+        </a>
+        <a href="topic4.html" class="theme-card">
+            <div class="theme-number">Раздел 4</div>
+            <div class="theme-title">Ограниченная лексика</div>
+            <div class="theme-desc">Историзмы, архаизмы, неологизмы, диалектизмы, профессионализмы, жаргонизмы — их роль и границы употребления.</div>
+        </a>
+    </div>
+    <footer>Тема 2: полное погружение в коммуникативный аспект культуры речи</footer>
+</div>
+</body>
+</html>
